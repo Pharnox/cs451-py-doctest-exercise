@@ -7,7 +7,7 @@ def pow_of_two(x):
     >>> pow_of_two(4)
     16
     >>> pow_of_two(-2)
-    16
+    4
     """
     return x**2
 
@@ -23,15 +23,30 @@ def float_div_by_two(x):
 
 def get_evens(n):
     """Return the first n even numbers as a list.
+    
+    >>> get_evens(10)
+    [0, 2, 4, 6, 8]
+    >>> get_evens(7)
+    [0, 2, 4, 6]
     """
-    return None
+    return list(range(0, n, 2))
 
 def get_mid(data):
     """Return the midpoint value in data.
+    
+    >>> get_mid([1,2,3,4,5])
+    3
+    >>> get_mid(['a','b','c','d','e','f','g'])
+    'd'
     """
-    return None
+    return data[len(data)//2]
 
 def get_last_half(data):
     """Return the values in the last half of data (slice) as a list.
+    
+    >>> get_last_half([1,2,3,4,5,6])
+    [4, 5, 6]
+    >>> get_last_half(['a','b','c','d','e','f','g'])
+    ['d', 'e', 'f', 'g']
     """
-    return None
+    return data[len(data)//2:]
